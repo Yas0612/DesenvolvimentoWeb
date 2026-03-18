@@ -10,10 +10,10 @@ Repositório central para o curso de **Desenvolvimento Web** do projeto The LabS
 ## 📂 Conteúdo das Aulas
 As pastas estão organizadas por ordem cronológica e tema para facilitar a revisão:
 
-* `01-apresentacao-e-setup`: Introdução ao curso, cronograma e configuração do VS Code/Git.
-* `02-html5-basico`: Estrutura de documentos, tags principais e semântica.
-* `03-css-fundamentos`: Estilização básica, seletores e box model.
-* `04-flexbox-e-layout`: Organização de elementos e design responsivo.
+* `01-Intrudução`: Introdução ao curso.
+* `02-Setup`: Instalação das Ferramentas.
+* `03-Fundamentos basicos`: HTML e CSS.
+* `04-Exercícios`: Exercícios de HTML e CSS.
 * `(próximas aulas serão adicionadas aqui...)`
 
 ---
