@@ -24,42 +24,36 @@ body {
     border: 4px dashed #333;
     background-color: #e2e8f0;
     padding: 10px;
-    height: 600px; 
-    display: block; /* O padrão, sem flexbox */
-
-
-    /* ---------------------------------------------------
-       PASSO 1: O GATILHO
-       --------------------------------------------------- */
-    /* display: flex; */
+    height: 300px; 
+    display: flex; /* O padrão, sem flexbox */
 
 
     /* ---------------------------------------------------
        PASSO 2: A DIREÇÃO DO TRILHO (EIXO PRINCIPAL)
   
        --------------------------------------------------- */
-    /* flex-direction: row; */
+    flex-direction: column;
 
 
     /* ---------------------------------------------------
        PASSO 3: ALINHAMENTO NO EIXO PRINCIPAL (Horizontal)
        (center, flex-end, space-between, space-around)
        --------------------------------------------------- */
-    /* justify-content: center; */
+    justify-content: end;
 
     /* ---------------------------------------------------
        PASSO 4: ALINHAMENTO NO EIXO SECUNDÁRIO (Vertical)
        (Testem: center, end, stretch)
        --------------------------------------------------- */
-    /* align-items: center; */
+    align-items:end;
 
     /* ---------------------------------------------------
        PASSO 5: O RESPIRO (Espaço inteligente entre eles)
        --------------------------------------------------- */
-
+      gap: 20px;
     /* ---------------------------------------------------
        PASSO 6: A QUEBRA DE LINHA
        
        --------------------------------------------------- */
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
 }
