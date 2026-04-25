@@ -3,6 +3,7 @@ const inputConteudo = document.querySelector("#conteudo");
 const btnEnviar = document.querySelector("#btn-enviar");
 const feedback = document.querySelector("#mensagem");
 
+// metodo: POST
 // url: "https://jsonplaceholder.typicode.com/posts";
 
 // body = {
@@ -15,7 +16,6 @@ const feedback = document.querySelector("#mensagem");
 btnEnviar.addEventListener("click", () => enviarDados());
 
 const enviarDados = async () => {
-
 
     if(inputTitulo.value.length === "" | inputConteudo.value.length === "") {
         alert("Campos inválidos!");

@@ -2,8 +2,8 @@ const inputCep = document.querySelector("#input-cep");
 const btnBuscar = document.querySelector("#btn-buscar");
 const painel = document.querySelector("#resultado");
 
-
-// url esperada pelo meu backend: viacep.com.br/ws/${cep}/json/
+// método: GET
+// url: viacep.com.br/ws/${cep}/json/
 
 btnBuscar.addEventListener("click", () => BuscarCep());
 
