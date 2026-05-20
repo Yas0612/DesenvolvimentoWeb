@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teachers API</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Teachers <span>API</span></h1>
+    <p>Dashboard de gerenciamento de professores</p>
+  </header>
+
+  <div class="grid">
+
+    <!-- GET: all teachers -->
+    <div class="card">
+      <h2>Professores <span class="tag tag-get">GET</span></h2>
+      <button class="btn-primary" id="btn-load-teachers">Carregar professores</button>
+      <ul class="item-list" id="teachers-list">
+        <li class="placeholder-text">Nenhum dado carregado.</li>
+      </ul>
+    </div>
+
+    <!-- GET: all classes -->
+    <div class="card">
+      <h2>Todas as aulas <span class="tag tag-get">GET</span></h2>
+      <button class="btn-primary" id="btn-load-classes">Carregar aulas</button>
+      <ul class="item-list" id="classes-list">
+        <li class="placeholder-text">Nenhum dado carregado.</li>
+      </ul>
+    </div>
+
+    <!-- GET: teacher ID by name -->
+    <div class="card">
+      <h2>ID por nome <span class="tag tag-get">GET</span></h2>
+      <div class="btn-row">
+        <input type="text" id="input-name-search" placeholder="Nome do professor" />
+        <button class="btn-primary" id="btn-search-by-name">Buscar</button>
+      </div>
+      <div class="result-box" id="result-id-by-name">O resultado aparece aqui.</div>
+    </div>
+
+    <!-- GET: classes by teacher ID -->
+    <div class="card">
+      <h2>Aulas por ID <span class="tag tag-get">GET</span></h2>
+      <div class="btn-row">
+        <input type="number" id="input-id-classes" placeholder="ID do professor" min="0" />
+        <button class="btn-primary" id="btn-classes-by-id">Buscar</button>
+      </div>
+      <ul class="item-list" id="classes-by-id-list">
+        <li class="placeholder-text">Nenhum dado carregado.</li>
+      </ul>
+    </div>
+
+    <!-- GET: classes by teacher name -->
+    <div class="card">
+      <h2>Aulas por nome <span class="tag tag-get">GET</span></h2>
+      <div class="btn-row">
+        <input type="text" id="input-name-classes" placeholder="Nome do professor" />
+        <button class="btn-primary" id="btn-classes-by-name">Buscar</button>
+      </div>
+      <ul class="item-list" id="classes-by-name-list">
+        <li class="placeholder-text">Nenhum dado carregado.</li>
+      </ul>
+    </div>
+
+    <!-- DELETE: teacher by ID -->
+    <div class="card">
+      <h2>Deletar professor <span class="tag tag-del">DELETE</span></h2>
+      <div class="btn-row">
+        <input type="number" id="input-delete-id" placeholder="ID do professor" min="0" />
+        <button class="btn-danger" id="btn-delete-teacher">Deletar</button>
+      </div>
+      <div class="result-box" id="result-delete">O resultado aparece aqui.</div>
+    </div>
+
+    <!-- POST: add teacher -->
+    <div class="card wide">
+      <h2>Adicionar professor <span class="tag tag-post">POST</span></h2>
+      <div class="btn-row">
+        <input type="text" id="input-new-name" placeholder="Nome do professor" />
+        <input type="text" id="input-new-classes" placeholder="Aulas (separadas por vírgula)" />
+        <button class="btn-primary" id="btn-add-teacher">Adicionar</button>
+      </div>
+      <div class="result-box" id="result-add">O resultado aparece aqui.</div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
